@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { Usuario } from './models/usuario';
+import { Tarea } from './models/tarea';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +13,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-examen';
+  selectedUsuario:Usuario = new Usuario();
+
+  usuarioArray: Usuario[]=[
+    {id:1, usuario:"OMLA", nombre:"Omar Lara"}
+  ];
+  
+  
+
 }
