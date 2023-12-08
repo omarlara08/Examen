@@ -1,0 +1,40 @@
+// Para compilar el proyecto
+mvn clean install
+
+//Para levantar el proyecto
+Dentro de eclipse ejecutar: 
+Seleccionar proyecto -> Boton secundario -> Run as -> Spring boot App
+
+
+//Validar los endpoints USUARIO
+//Get all
+http://localhost:8080/apiUsuario/usuarios
+
+//Get 
+http://localhost:8080/apiUsuario/usuario/{id}
+
+//post
+http://localhost:8080/apiUsuario/usuario
+
+//put
+http://localhost:8080/apiUsuario/usuario/{id}
+
+//delete
+http://localhost:8080/apiUsuario/usuario/{id}
+
+
+//Validar los endpoints TAREA
+//Get all
+http://localhost:8080/apiTarea/tareas
+
+//Get 
+http://localhost:8080/apiTarea/tarea/{id}
+
+//post
+http://localhost:8080/apiTarea/tarea
+
+//put
+http://localhost:8080/apiTarea/tarea/{id}
+
+//delete
+http://localhost:8080/apiTarea/tarea/{id}
